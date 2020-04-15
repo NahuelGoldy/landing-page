@@ -163,7 +163,7 @@ ul, ol {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
+    opacity: .7;
     background: #1C1D21;
 }
 
@@ -997,12 +997,12 @@ header {
     background-color: #F4F4F4;
     padding: 40px 20px;
     margin: 15px 0px;
-    border-radius: 7%;
+    /*border-radius: 7%;*/
 }
 
 .team::after {
     content: "";
-    background-color: #6195FF;
+    /*background-color: #6195FF;*/
     position: absolute;
     left: 0;
     right: 0;
@@ -1040,8 +1040,13 @@ header {
     transition: 0.2s opacity;
 }
 
-team:hover .overlay {
+.team:hover .overlay {
     opacity: 0.8;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
 }
 
 .team .team-content {
@@ -1064,7 +1069,7 @@ team:hover .overlay {
 }
 
 .team:hover .team-content h3, .team:hover .team-content span {
-    color: #FFF;
+    /* color: #FFF; */
 }
 
 /*.team:hover .team-content span {*/
