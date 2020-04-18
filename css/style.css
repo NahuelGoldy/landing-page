@@ -683,10 +683,6 @@ header {
 	Portfolio
 \*------------------------------------*/
 
-#portfolio, #whychooseus {
-    background: #F0F0F0 !important;
-}
-
 .work {
     position: relative;
     padding: 20px;
@@ -694,6 +690,11 @@ header {
 
 .work>img {
   width: 100%;
+}
+
+.portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .work .overlay {
@@ -849,6 +850,10 @@ header {
 /*------------------------------------*\
 	Why choose us
 \*------------------------------------*/
+
+#whychooseus {
+    background: #F0F0F0 !important;
+}
 
 .whychooseus-title {
     padding-top: 2rem;
@@ -1223,11 +1228,15 @@ header {
 
 @media only screen and (max-width: 991px) {
     #portfolio [class*='col-md'] {
-        width:50% !important;
+        width:50%;
     }
 }
 
 @media only screen and (max-width: 767px) {
+   #portfolio [class*='col-sm'] {
+        width:50%;
+    }
+
   .section-header h2.title {
   		font-size:31.5px;
 	}
