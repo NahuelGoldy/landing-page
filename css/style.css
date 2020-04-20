@@ -683,6 +683,10 @@ header {
 	Portfolio
 \*------------------------------------*/
 
+#portfolio {
+    display: none;
+}
+
 .work {
     position: relative;
     padding: 20px;
@@ -808,8 +812,8 @@ header {
     padding: 40px 20px 40px 70px;
     margin: 15px 0px;
     border: 1px solid #EEE;
-    max-height: 21.5em;
-    min-height: 21.5em;
+    max-height: 18em;
+    min-height: 18em;
 }
 
 .service i {
@@ -841,6 +845,10 @@ header {
 .service h3 {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+}
+
+.service p {
+    font-size: 0.9em;
 }
 
 .service:hover h3 {
